@@ -1,5 +1,5 @@
 
-const { httpClient } = require('./utils')
+const httpClient = require('request')
 
 class GoogleSpreadsheetDb {
 

@@ -9,11 +9,20 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "request": "^2.83.0"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
     "sinon": "^4.2.2",
+    "uglifyjs-webpack-plugin": "^1.1.8",
     "webpack": "^3.10.0"
+  },
+  "browser": {
+    "request": "./src/http-browser-client.js"
   }
 }

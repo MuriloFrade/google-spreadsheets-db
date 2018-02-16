@@ -1,11 +1,11 @@
 
 const { spy, assert, stub, match } = require('sinon')
 const { expect } = require('chai')
+const httpClient  = require('request')
 
 const { delay } = require('./utils')
 
 const GoogleSpreadsheetDb = require('../src/google-spreadsheet-db')
-const { httpClient } = require('../src/utils')
 
 describe('Google spreadsheet DB', () => {
   const apiKey = 'abcde12345'
