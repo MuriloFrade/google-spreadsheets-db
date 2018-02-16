@@ -1,7 +1,7 @@
 
 const httpClient = require('request')
 
-class GoogleSpreadsheetDb {
+class GoogleSpreadsheetsDb {
 
   constructor (apiKey, spreadsheetId) {
     if (!apiKey) {
@@ -64,4 +64,4 @@ class GoogleSpreadsheetDb {
   }
 }
 
-module.exports = GoogleSpreadsheetDb
+module.exports = GoogleSpreadsheetsDb

@@ -1,14 +1,23 @@
 {
-  "name": "google-spreadsheet-db",
+  "name": "google-spreadsheets-db",
   "version": "0.0.1",
-  "description": "",
+  "description": "google spreadsheets readonly database",
   "main": "app.js",
   "scripts": {
     "test": "mocha --recursive",
-    "build": "webpack"
+    "build": "webpack",
+    "precommit": "npm run test && npm run build && git add dist/"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "murilofrade",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuriloFrade/google-spreadsheets-db.git"
+  },
+  "keywords": [
+    "spreadsheets",
+    "google spreadsheets"
+  ],
+  "license": "MIT",
   "dependencies": {
     "request": "^2.83.0"
   },
@@ -17,6 +26,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
+    "husky": "^0.14.3",
     "mocha": "^5.0.0",
     "sinon": "^4.2.2",
     "uglifyjs-webpack-plugin": "^1.1.8",

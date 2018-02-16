@@ -1,25 +1,25 @@
-# Google Spreadsheet DB
+# Google Spreadsheets DB
 
 Get data from Google spreadsheets as Javascript objects using this simple API and take the advantage of having a ready made CMS and readonly data store for your project.
 
 ## Installation
 
-- In a browser: 
+- In a browser:
 
 ```HTML
-<script src="./dist/google-spreadsheet-db.min.js"></script>
+<script src="./dist/google-spreadsheets-db.min.js"></script>
 ```
 
 - Using npm:
 
 ```
-$ npm i --save google-spreadsheet-db
+$ npm i --save google-spreadsheets-db
 ```
 
 - In Node.js:
 
 ```
-const GoogleSpreadsheetDb = require('google-spreadsheet-db')
+const GoogleSpreadsheetsDb = require('google-spreadsheets-db')
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ const GoogleSpreadsheetDb = require('google-spreadsheet-db')
 - DB instance:
 
 ```javascript
-const db = new GoogleSpreadsheetDb(
+const db = new GoogleSpreadsheetsDb(
   'YOUR-API-KEY-HERE',
   'SPREADSHEET-ID-HERE'
 )
@@ -61,7 +61,7 @@ See [example](https://docs.google.com/spreadsheets/d/1i0VCssIJFCMmWotcV1R_kqhLWs
 
 ### Spreadsheet ID and sheet names
 
-The **spreadsheet ID** is the value between the "/d/" and the "/edit" in the URL of your spreadsheet. Use it to instanciate GoogleSpreadsheetDb. 
+The **spreadsheet ID** is the value between the "/d/" and the "/edit" in the URL of your spreadsheet. Use it to instanciate GoogleSpreadsheetsDb.
 
 `https://docs.google.com/spreadsheets/d/spreadsheetId/edit#gid=0`
 

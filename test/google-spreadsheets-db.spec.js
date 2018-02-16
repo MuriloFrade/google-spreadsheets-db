@@ -5,9 +5,9 @@ const httpClient  = require('request')
 
 const { delay } = require('./utils')
 
-const GoogleSpreadsheetDb = require('../src/google-spreadsheet-db')
+const GoogleSpreadsheetsDb = require('../src/google-spreadsheets-db')
 
-describe('Google spreadsheet DB', () => {
+describe('Google spreadsheets DB', () => {
   const apiKey = 'abcde12345'
   const spreadsheetId = '1234567890'
 
@@ -17,7 +17,7 @@ describe('Google spreadsheet DB', () => {
   let callback
 
   beforeEach(() => {
-    db = new GoogleSpreadsheetDb(apiKey, spreadsheetId)
+    db = new GoogleSpreadsheetsDb(apiKey, spreadsheetId)
     sheetName = 'portifolio'
     httpGetStub.reset()
     callback = spy()

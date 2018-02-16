@@ -4,11 +4,11 @@ const path = require('path')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
-  entry: './src/google-spreadsheet-db.js',
+  entry: './src/google-spreadsheets-db.js',
   output: {
-    filename: 'google-spreadsheet-db.min.js',
+    filename: 'google-spreadsheets-db.min.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'GoogleSpreadsheetDb',
+    library: 'GoogleSpreadsheetsDb',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
