@@ -1,6 +1,6 @@
 {
   "name": "google-spreadsheets-db",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "google spreadsheets readonly database",
   "main": "./src/google-spreadsheets-db.js",
   "scripts": {
