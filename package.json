@@ -1,8 +1,8 @@
 {
   "name": "google-spreadsheets-db",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "google spreadsheets readonly database",
-  "main": "app.js",
+  "main": "./src/google-spreadsheets-db.js",
   "scripts": {
     "test": "mocha --recursive",
     "build": "webpack",
